@@ -1,7 +1,7 @@
 body {
     display: grid;
     place-items: center;
-    background-color: black;
+    background-color: rgb(14, 14, 14);
     margin: 0rem;
     height: 100vh;
     overflow: hidden;
@@ -25,19 +25,18 @@ h2 {
 .link {
     font-family: 'Space Mono', monospace;
     display: block;
-    color: white;
+    color: transparent;
     font-size: 3em;
     text-decoration: none;
     padding: 3px;
     width: fit-content;
-
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(31, 31, 164), rgb(125, 64, 185));
+    background: linear-gradient(to right, white, white, rgb(225, 45, 108), rgb(199, 43, 178));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
+    background-size: 300% 100%;
     background-position: 100%;
-    transition: background-position 375ms ease;
+    transition: background-position 400ms ease;
 }
 
 .link:hover {
@@ -45,9 +44,19 @@ h2 {
 }
 
 .fancy {
-    background-image: linear-gradient(45deg, #f8f684, #d33a65, #9198e5);
-    background-size: 100%;
+    background: linear-gradient(90deg, #f8f684, #d33a65, #9198e5);
+    background-size: 300%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent; 
+	animation: animate-text 5s ease-in-out infinite;
+	-moz-animation: animate-text 5s ease-in-out infinite;
+	-webkit-animation: animate-text 5s ease-in-out infinite;
+    animation: animate-text 5s ease-in-out infinite;
+}
+
+@keyframes animate-text {
+    0% { background-position: 0px 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0px 50%; }
 }
