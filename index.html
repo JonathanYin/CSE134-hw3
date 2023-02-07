@@ -9,10 +9,25 @@
 </head>
 
 <body>
-    <h1>Hi, I'm <span class="fancy">Jonathan Yin!</span></h1>
-    <h2>Software Developer</h2>
-    <a class="link" href="about.html">About Me</a>
-    <a class="link" href="projects.html">Experience</a>
-    <a class="link" href="contact.html">Contact</a>
+    <main class="profile">
+        <div class="profile-bg"></div>
+        <section class="container">
+            <picture>
+                <source media="(min-width:650px)" srcset="portrait.jpg">
+                <source media="(min-width:465px)" srcset="portrait.webp">
+                <img src="portrait-min.jpg" alt="Man sitting">
+            </picture>
+            <section class="profile-info">
+                <h1 class="greeting">Hi, my name is</h1>
+                <h1 class="my-name"><span class="fancy">Jonathan Yin</span></h1>
+                <h2><a class="link" href="about.html">About Me</a></h2>
+                <h2><a class="link" href="experiments.html">Experience</a></h2>
+                <h2><a class="link" href="contact.html">Contact</a></h2>
+                <p>
+                    Mathematics and Computer Science at UC San Diego. Aspiring full-stack software engineer. 
+                </p>
+            </section>
+        </section>
+    </main>
 </body>
 </html>
