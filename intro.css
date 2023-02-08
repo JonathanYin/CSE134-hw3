@@ -46,13 +46,14 @@ picture {
 }
 
 img {
-    top: -1vh;
+    object-fit: cover;
     animation: loadProfileImage 1s ease-in-out 0.5s;
     animation-fill-mode: both;
     position: relative;
     border-radius: 10px;
     box-shadow: 0 25px 45px -20px rgba(255, 0, 47, 0.55),
     inset 0 0px 120px rgba(204, 0, 255, 0.75);
+    display: block;
     width: 100%;
     flex: none;
     background-size: cover;
@@ -122,7 +123,7 @@ img {
     background-position: 0 100%;
 }
 
-@media only screen and (max-aspect-ratio: 4/7) and (max-width: 600px) {
+/* @media only screen and (max-aspect-ratio: 4/7) and (max-width: 600px) {
     .profile {
         margin: 3%;
         height: 97%;
@@ -144,14 +145,14 @@ img {
     h1.second-name {
         left: 60px;
     }
-}
+} */
 
-@media screen and (min-aspect-ratio: 4/7) {
+/* @media screen and (min-aspect-ratio: 4/7) {
     .profile {
         margin-left: 10%;
         margin-right: 10%;
     }
-}
+} */
 
 @keyframes backgroundAnimation {
     0% {
