@@ -9,18 +9,39 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container nav-bar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        
+        
     </header>
+    
     <main>
+        <section class="container">
+            
+            <div class="title">
+                <!-- <div><span class="typcn typcn-heart-outline icon heading"></span></div> -->
+                <div class="smallsep heading"></div>
+                <h1 class="heading">Jonathan Yin</h1>
+                <h2 class="heading">Student at UC San Diego</h2>
+                <a class="smoothscroll" href="#about">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </a> 
+            </div>
+            <a class="smoothscroll" href="#about">
+                <div class="scroll-down"></div>
+            </a>
+        </section>
+        
         <h1>About Me</h1>
-        <section>
+        <section class="about">
             <h2>Education</h2>
             <p>I am currently pursuing a degree in mathematics and computer science at the University of California, San Diego. I have taken courses in web development, software engineering, and algorithms and have been actively involved in several research projects in these areas.</p>
         </section>
@@ -47,15 +68,22 @@
                 <span>Pandas, Numpy, Matplotlib</span>
             </div>
         </section>
+        <section class="projects">
+            <h2>Projects</h2>
+        </section>
     </main>
-    <aside>
+    <!-- <aside>
         <h3>Certifications</h3>
         <ul>
             <li>Certification in Machine Learning from XYZ</li>
             <li>Certification in Web Development from ABC</li>
         </ul>
-    </aside>
+    </aside> -->
     <footer>
+        <section class="contact">
+            <h2>Contact</h2>
+        </section>
+        
         <p>Copyright &copy; 2023 Jonathan Yin</p>
     </footer>
 </body>

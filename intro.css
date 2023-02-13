@@ -29,8 +29,8 @@ body {
     border-radius: 10px;
     background: white;
     box-shadow: 0 30px 50px -20px rgba(14, 0, 47, 0.21);
-    width: calc(100% - 75px);
-    height: calc(100% - 110px);
+    width: calc(100% - 2vw);
+    height: calc(100% - 15vh);
     z-index: -1;
 }
 
@@ -64,6 +64,7 @@ img {
     margin-top: 120px;
     padding: 8% 8% 2% 8%;
     position: relative;
+    left: -3vw;
 }
 
 .profile-info h1 {
@@ -76,36 +77,45 @@ img {
 
 .profile-info h1.greeting {
     animation: titleEffect 1s cubic-bezier(0,0.2,0.4,1);
-    top: -10vh;
-    left: 0vw;
+    top: -8vh;
+    left: 3vw;
     font-family: 'Space Mono', monospace;
     color: whitesmoke;
 } 
 
 .profile-info h1.my-name {
     animation: titleEffect 1s cubic-bezier(0,0,0.3,1);
-    top: 0vh;
-    left: 0vw;
+    top: 1vh;
+    left: 3vw;
 }
 
-.profile-info h2 {
+svg {
+    padding: 2ch;
+}
+/* .profile-info h2 {
+    display: inline-block;
+    padding: 5ch;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
     margin-top: 0;
-    margin-left: -10%;
+    margin-left: -25%;
     margin-bottom: 5%;
     flex-wrap: wrap;
-}
+} */
 
 .profile-info p {
     line-height: 1.5rem;
     color:rgb(142, 140, 140);
 }
 
+.profile-info h2:nth-child(n+1) {
+    width:fit-content;
+}
+
 .link {
     font-family: 'Space Mono', monospace;
-    display: block;
+    display: flex;
     color: transparent;
     text-decoration: none;
     padding: 3px;
@@ -123,7 +133,7 @@ img {
     background-position: 0 100%;
 }
 
-/* @media only screen and (max-aspect-ratio: 4/7) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .profile {
         margin: 3%;
         height: 97%;
@@ -139,13 +149,35 @@ img {
     .profile-bg {
         width: 100%;
     }
-    h1.first-name {
-        left: 10px;
+    .profile-info h1.greeting {
+        display: none;
     }
-    h1.second-name {
-        left: 60px;
+    .profile-info h1.my-name {
+        top: -10vh;
     }
-} */
+}
+
+@media only screen and (max-height: 600px) {
+    .profile-bg {
+        height: 75%;
+        width: 100%;
+    }
+    
+    .profile-info h1.greeting {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .profile-bg {
+        height: 75%;
+        width: 100%;
+    }
+    
+    .profile-info h1.greeting {
+        top: -10vh;
+    }
+}
 
 /* @media screen and (min-aspect-ratio: 4/7) {
     .profile {
