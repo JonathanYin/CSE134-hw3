@@ -1,9 +1,8 @@
 body, html {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    background: #e55d87;
-    background: linear-gradient(135deg, #e55d86 0%, #5fc3e3 100%);
     color: white;
+    background-color: whitesmoke;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -14,17 +13,15 @@ body, html {
     justify-content: center;
 }
 
-/* header {
-    height: 100vh;
-    
-} */
+.gradient-bg {
+    background: linear-gradient(135deg, #e55d86 0%, #5fc3e3 100%);
+}
 
 .title {
-    /* padding: 10rem; */
-    /* max-width: 960px; */
     justify-content: center;
     text-align: center;
     align-items: center;
+    height: 100vh;
 }
 
 .title .smallsep {
@@ -88,7 +85,7 @@ li {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: white;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -96,6 +93,42 @@ li {
 .nav-bar a:hover:after { 
     width: 100%; 
     left: 0; 
+}
+
+p {
+    color: #292d2e;
+    font-size: 1.25rem;
+}
+
+#row {
+    padding: 5ch;
+    
+}
+
+#about h1, #projects h1 {
+    color: transparent;
+    background: linear-gradient(rgb(225, 45, 108), rgb(199, 43, 178));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: 100%;
+}
+
+#about h3, #projects h3 {
+    color: transparent;
+    background: linear-gradient(rgb(251, 241, 95), rgb(240, 171, 60));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: 100%;
+}
+
+svg {
+    display: inline;
+    top: 22vh;
+    position: relative;
 }
 
 @keyframes fadeInAnimation {
@@ -135,8 +168,6 @@ li {
     animation: fade_move_down 2s ease-in-out infinite;
 }
 
-
-/*animated scroll arrow animation*/
 @-webkit-keyframes fade_move_down {
     0% {
         -webkit-transform:translate(0, -10px) rotate(45deg);
