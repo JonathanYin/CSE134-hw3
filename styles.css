@@ -123,21 +123,6 @@ p {
     vertical-align:  baseline;
 } 
 
-#left {
-    width: 50%;
-    flex-grow: 0;
-    text-align: center;
-}
-
-#main { 
-    background-image: url("https://jonathanyin.us/assets/css/images/dark-tl.svg"), url("https://jonathanyin.us/assets/css/images/dark-tr.svg"), url("https://jonathanyin.us/assets/css/images/dark-bl.svg"), url("https://jonathanyin.us/assets/css/images/dark-br.svg"); 
-    background-position: top left, top right, bottom left, bottom right; 
-    background-repeat: no-repeat; 
-    background-size: 25em; 
-    padding: 7em 0; 
-} 
-
-
 .container { 
     margin: 0 auto; 
     max-width: 100%; 
@@ -333,6 +318,8 @@ img {
     transition: all 0.3s;
     margin-top: 10vh;
     font-weight:700;
+    padding: 5px;
+    text-align: center;
 }
 
 .contact-form [type="submit"]:hover {
@@ -340,7 +327,6 @@ img {
 }
 
 header h2 {
-
     text-align: center;
 }
 
@@ -373,7 +359,6 @@ svg {
     font-size: 20px;
     z-index: 100;
     text-decoration: none;
-    text-shadow: 0;
     width: 13px;
     height: 13px;
     border-bottom: 2px solid #fff;
