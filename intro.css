@@ -166,6 +166,7 @@ svg {
     .profile-info h1.greeting {
         display: none;
     }
+
 }
 
 @media only screen and (max-height: 800px) {
