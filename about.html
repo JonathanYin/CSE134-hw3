@@ -45,7 +45,7 @@
             
             <section class="wrapper bg container">
                 <div class="row gtr-50">
-                    <div class="col-8 col-12-narrower">
+                    <div class="col-8">
                         <header>
                             <h2>
                                 About Me
@@ -78,8 +78,14 @@
                             </ul>
                         </footer>
                     </div>
-                    <div class="col-4 col-12-narrower imp-narrower">
-                        <img src="standing.jpg" style="height: 100%; width: 100%; object-fit: contain" alt="Profile Photo">
+                    <div class="col-4">
+                        <picture>
+                            <source media="(min-width:1000px)" srcset="standing.jpg">
+                            <source media="(min-width:650px)" srcset="standing.jpg">
+                            <source media="(min-width:465px)" srcset="standing.jpg" width="300px">
+                            <img src="standing.jpg" style="height: 100%; width: 100%; object-fit: contain" alt="Standing man in mall hallway" id="main-img">
+                        </picture>
+                        
                     </div>
                 </div>
             </section>

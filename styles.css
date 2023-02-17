@@ -411,3 +411,53 @@ svg {
         opacity: 0;
     }
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+        height: 50%;
+    }
+    .about {
+        width: 30%;
+    }
+    #main-img {
+        width:fit-content;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .container {
+        max-width: 100%;
+        padding: 5px;
+        height: 75%;
+        width: 30%;
+    }
+    .projects {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-height: 800px) {
+    .about {
+        width: 50%;
+    }
+    .projects {
+        width: fit-content;
+    }
+}
