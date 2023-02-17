@@ -278,7 +278,6 @@ img {
 .contact-form {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .input-text {
@@ -316,7 +315,6 @@ img {
     padding-top:10px;
     padding-bottom:10px;
     transition: all 0.3s;
-    margin-top: 10vh;
     font-weight:700;
     padding: 5px;
     text-align: center;
@@ -423,13 +421,18 @@ svg {
     .container {
         max-width: 100%;
         overflow-x: hidden;
-        height: 50%;
     }
     .about {
         width: 30%;
     }
     #main-img {
         width:fit-content;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .projects {
+        width: fit-content;
     }
 }
 
@@ -443,12 +446,13 @@ svg {
     }
     .container {
         max-width: 100%;
-        padding: 5px;
-        height: 75%;
-        width: 30%;
+        overflow-x: hidden;
+    }
+    .nav-bar {
+        display: none;
     }
     .projects {
-        display: none;
+        width: fit-content;
     }
     
 }

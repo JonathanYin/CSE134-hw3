@@ -92,17 +92,6 @@ img {
 svg {
     padding: 2ch;
 }
-/* .profile-info h2 {
-    display: inline-block;
-    padding: 5ch;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.2rem;
-    margin-top: 0;
-    margin-left: -25%;
-    margin-bottom: 5%;
-    flex-wrap: wrap;
-} */
 
 .profile-info p {
     line-height: 1.5rem;
